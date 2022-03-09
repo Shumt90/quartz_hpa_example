@@ -1,0 +1,9 @@
+datasource:
+  postgres:
+    host: "pg-postgresql2.default.svc.cluster.local"
+    port: '"5432"'
+  db:
+    user: postgres
+    password: Al9kyGBU1K
+    name: postgres
+    schema: autoscale_test

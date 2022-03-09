@@ -1,0 +1,7 @@
+app:
+  schema: ${DB_SCHEMA}
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_POSTGRES_HOST}:${DB_POSTGRES_PORT}/${DB_NAME}?currentSchema=${app.schema}
+    password: ${DB_PASS}
+    username: ${DB_USER}

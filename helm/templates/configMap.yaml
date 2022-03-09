@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: autoscale-worker-config
+  labels:
+    app: autoscale-worker
+data:
+  DB_POSTGRES_HOST: {{.Values.datasource.postgres.host}}
+  DB_POSTGRES_PORT: {{.Values.datasource.postgres.port}}
+  DB_USER: {{.Values.datasource.db.user}}
+  DB_PASS: {{.Values.datasource.db.password}}
+  DB_NAME: {{.Values.datasource.db.name}}
+  DB_SCHEMA: {{.Values.datasource.db.schema}}

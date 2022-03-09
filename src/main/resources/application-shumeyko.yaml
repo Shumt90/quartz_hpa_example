@@ -1,0 +1,7 @@
+app:
+  schema: autoscale_test
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=${app.schema}
+    password: Al9kyGBU1K
+    username: postgres
